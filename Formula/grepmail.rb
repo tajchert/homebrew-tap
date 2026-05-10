@@ -1,8 +1,8 @@
 class Grepmail < Formula
   desc "Fast, grep-style CLI for searching and exploring mbox mail archives"
   homepage "https://github.com/tajchert/grepmail"
-  url "https://github.com/tajchert/grepmail/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "2b5cc6fb8b350bdfd7b3e91f8fae7afefaebf57a37747f7de92d91054136b9f1"
+  url "https://github.com/tajchert/grepmail/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "f00d59af09c7635e20562253ac88bcbb77559275f3a775bb4a1cb96a7c559720"
   license "MIT"
   head "https://github.com/tajchert/grepmail.git", branch: "main"
 
