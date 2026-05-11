@@ -1,8 +1,8 @@
 class Harq < Formula
   desc "CLI tool for exploring and filtering HAR files"
   homepage "https://github.com/tajchert/harq"
-  url "https://github.com/tajchert/harq/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "eb56dde77aaa17ca425e6c88c7ea1c965aa219ee3012a537c1cfca15690e3d2a"
+  url "https://github.com/tajchert/harq/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "411737c66ec673ad8be3ae58a387087211665390bdff1c81aefae60729ce48e4"
   license "MIT"
 
   depends_on "rust" => :build
