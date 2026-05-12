@@ -25,14 +25,7 @@ class Harq < Formula
   end
 
   on_linux do
-    url "https://github.com/tajchert/harq/archive/refs/tags/v0.2.0.tar.gz"
-    sha256 "411737c66ec673ad8be3ae58a387087211665390bdff1c81aefae60729ce48e4"
-
-    depends_on "rust" => :build
-
-    def install
-      system "cargo", "install", *std_cargo_args
-    end
+    disable! date: "2026-05-12", because: "prebuilt Linux archives are not yet available"
   end
 
   test do
