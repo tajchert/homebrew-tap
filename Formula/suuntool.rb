@@ -5,21 +5,21 @@
 class Suuntool < Formula
   desc "Unofficial CLI for the Suunto / Sports-Tracker API"
   homepage "https://github.com/tajchert/suuntool"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tajchert/suuntool/releases/download/v0.5.0/suuntool_0.5.0_darwin_amd64.tar.gz"
-      sha256 "f35a92052f346cce9b06ccd1f850ca54b1adec7a805c43dbc8470838ec3c610a"
+      url "https://github.com/tajchert/suuntool/releases/download/v0.6.0/suuntool_0.6.0_darwin_amd64.tar.gz"
+      sha256 "32090f96c975783a9080464f6a76f093b2d0616aa8ac3c879414d505b406f99f"
 
       define_method(:install) do
         bin.install "suuntool"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tajchert/suuntool/releases/download/v0.5.0/suuntool_0.5.0_darwin_arm64.tar.gz"
-      sha256 "e37f918b679bf0c27907a01654e9d58a16733e337eb9d2570bbf2e9544c824ab"
+      url "https://github.com/tajchert/suuntool/releases/download/v0.6.0/suuntool_0.6.0_darwin_arm64.tar.gz"
+      sha256 "ba2aaee5e43c0210f40ee9b462266002d9452ee2f73711eefdd937a652b17ca8"
 
       define_method(:install) do
         bin.install "suuntool"
@@ -29,15 +29,15 @@ class Suuntool < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tajchert/suuntool/releases/download/v0.5.0/suuntool_0.5.0_linux_amd64.tar.gz"
-      sha256 "f79a4935dd405de60b7be850299d66b32ee51af384ac41ef99778ed8d4e2edb8"
+      url "https://github.com/tajchert/suuntool/releases/download/v0.6.0/suuntool_0.6.0_linux_amd64.tar.gz"
+      sha256 "8f7f73324ab2585fb1e41b12313aa953bf7fad88f6cfbc3cf5554a4fda48c5f1"
       define_method(:install) do
         bin.install "suuntool"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tajchert/suuntool/releases/download/v0.5.0/suuntool_0.5.0_linux_arm64.tar.gz"
-      sha256 "1a14b92ab62f961b63e3388d5d8b3bf7355fc150a7b8fba1e114efee0b98ce9c"
+      url "https://github.com/tajchert/suuntool/releases/download/v0.6.0/suuntool_0.6.0_linux_arm64.tar.gz"
+      sha256 "2f5018894665b2787651c0e617c9e05f39e34853c45a8d1dd726e96b5b7ad6a7"
       define_method(:install) do
         bin.install "suuntool"
       end
