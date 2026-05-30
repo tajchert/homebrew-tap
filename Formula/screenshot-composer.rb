@@ -6,8 +6,8 @@ require "language/node"
 class ScreenshotComposer < Formula
   desc "Compose Google Play Store screenshots from Android app screenshots"
   homepage "https://github.com/tajchert/screenshot-composer"
-  url "https://registry.npmjs.org/screenshot-composer/-/screenshot-composer-0.1.0.tgz"
-  sha256 "413989b11d09e93693eed8ff08a2d27ba61150ff7119a57903b176a0b9d63d42"
+  url "https://registry.npmjs.org/screenshot-composer/-/screenshot-composer-0.2.0.tgz"
+  sha256 "d64b1f5a0fc8a2e290ce7acb80e44e1bd89d7f3c1083ff19e96898573bd31253"
   license all_of: ["MIT", "Apache-2.0"]
 
   depends_on "node"
