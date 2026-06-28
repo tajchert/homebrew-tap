@@ -77,7 +77,10 @@ class TinkAgent < Formula
     app.install Dir["*"]
 
     venv = virtualenv_create(libexec/"venv", "python3.14")
-    venv.pip_install resources
+    resources.each do |r|
+      target = r.downloader.basename.to_s.end_with?(".whl") ? r.cached_download : r
+      venv.pip_install target
+    end
 
     (bin/"tink-agent").write <<~EOS
       #!/bin/bash
