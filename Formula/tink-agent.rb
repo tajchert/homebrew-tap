@@ -78,7 +78,12 @@ class TinkAgent < Formula
 
     venv = virtualenv_create(libexec/"venv", "python3.14")
     resources.each do |r|
-      target = r.downloader.basename.to_s.end_with?(".whl") ? r.cached_download : r
+      if r.downloader.basename.to_s.end_with?(".whl")
+        target = buildpath/r.downloader.basename
+        cp r.cached_download, target
+      else
+        target = r
+      end
       venv.pip_install target
     end
 
