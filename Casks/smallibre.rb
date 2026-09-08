@@ -1,6 +1,6 @@
 cask "smallibre" do
-  version "0.3.4"
-  sha256 "344269f9a0265e7ba11f1d2763dd6ebb68e653f78b0f1c6b2960f33c95d372a4"
+  version "0.3.5"
+  sha256 "1eafe657b6ad32fe3a87f6271b53f476dc5cdf1fffd059d653a982166fe77cae"
 
   url "https://github.com/tajchert/smallibre/releases/download/v#{version}/Smallibre-#{version}-macos-arm64.zip"
   name "Smallibre"
