@@ -1,6 +1,6 @@
 cask "carom" do
-  version "1.0.6"
-  sha256 "98c6c37ba4ddcd7335bb1f4619d470c42433e90a77132d5a39631a2ccc758741"
+  version "1.0.8"
+  sha256 "4bc641417445e7882795de50ff237d03c460e5efc3297ef0c6043325ca216593"
 
   url "https://github.com/tajchert/carom/releases/download/v#{version}/Carom-#{version}-macos.zip"
   name "Carom"
