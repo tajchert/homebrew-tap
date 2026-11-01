@@ -1,8 +1,8 @@
 cask "carom" do
-  version "1.1.0"
-  sha256 "720d354bec6fe4038a963bfa75a145bf2e00c22502a780bc1614c18a91eb888c"
+  version "1.1.1,macos-v1.1.1"
+  sha256 "42e3a4d7f17eac4b326eec6e79ab521cc34c399cf537642d1504689ca3f1b004"
 
-  url "https://github.com/tajchert/carom/releases/download/v#{version}/Carom-#{version}-macos.zip"
+  url "https://github.com/tajchert/carom/releases/download/#{version.csv.second}/Carom-#{version.csv.first}-macos.zip"
   name "Carom"
   desc "End-to-end encrypted phone notification and clipboard sync"
   homepage "https://github.com/tajchert/carom"
